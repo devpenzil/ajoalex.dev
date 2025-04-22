@@ -69,13 +69,13 @@ function Highlights() {
         <div className="flex items-start mt-3 leading-[180%] flex-wrap">
           <h3>have an idea?</h3>{" "}
           <a
-            href="mailto:hello@saviomartin.com"
+            href="mailto:ajoalex012@gmail.com"
             target="_blank"
             data-umami-event="📫 Email [Button Click]"
           >
             <div className="flex items-center border-b-2 border-dashed border-[#e9ecef] group hover:text-[#333] text-black hover:border-[#aaa] ml-2 transition duration-300">
               <h3 className="font-semibold italic whitespace-nowrap not-italic">
-                hello@saviomartin.com
+                ajoalex012@gmail.com
               </h3>
             </div>
           </a>
