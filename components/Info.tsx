@@ -1,13 +1,36 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 function Info() {
+  const [time, setTime] = useState<string>();
+
+  useEffect(() => {
+    setInterval(() => {
+      setTime(getCurrentTime);
+    }, 1000);
+  }, []);
+
+  function getCurrentTime() {
+    const now = new Date();
+    let hours = now.getHours();
+    const minutes = now.getMinutes();
+    const seconds = now.getSeconds();
+    const ampm = hours >= 12 ? "PM" : "AM";
+
+    hours = hours % 12 || 12; // Convert to 12-hour format, 0 becomes 12
+
+    // Pad with leading zeros if needed
+    const format = (num) => String(num).padStart(2, "0");
+
+    return `${format(hours)}:${format(minutes)}:${format(seconds)} ${ampm}`;
+  }
+
   return (
     <div>
       <div>
         <div className="flex items-center flex-wrap leading-[180%]">
           <h4>🇮🇳 Based in Kerala, India </h4>
           <div className="h-[3px] w-[3px] bg-zinc-400 mt-[1px] mx-2 rounded-full" />
-          <h4 className="uppercase">06:02:50 pm</h4>
+          <h4 className="uppercase">{time}</h4>
         </div>
         <div className="flex items-center mt-3">
           <h4>
