@@ -1,7 +1,7 @@
 import React from "react";
 
 function Projects() {
-  return <div>hello</div>;
+  return <div>Will be updated soon..</div>;
 }
 
 export default Projects;

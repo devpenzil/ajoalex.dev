@@ -51,7 +51,7 @@ function Blogs() {
               Medium
             </h3>
             <img
-              src="https://cal.com/android-chrome-512x512.png"
+              src="/medium.ico"
               alt="Medium Logo"
               className="undefined ml-2"
               height={22}

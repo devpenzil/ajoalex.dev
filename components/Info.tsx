@@ -11,8 +11,8 @@ function Info() {
         </div>
         <div className="flex items-center mt-3">
           <h4>
-            Besides programming I also enjoy Chess, Football, F1 Racing, and
-            Maths
+            Besides programming I also enjoy Motorcycle Touring as a passion and
+            travel across India
           </h4>
         </div>
         <div className="flex items-start flex-wrap mt-3 leading-[180%]">
@@ -43,7 +43,7 @@ function Info() {
         <div className="flex items-start flex-wrap mt-3 leading-[180%]">
           <h4>I share my ideas on </h4>
           <a
-            href="https://x.com/saviomartin7"
+            href="http://x.com/devpenzil"
             target="_blank"
             data-umami-event="🚀 Twitter [Link Click]"
           >
@@ -62,7 +62,7 @@ function Info() {
           </a>
           <h4 className="mr-2">&amp; photos on</h4>
           <a
-            href="https://instagram.com/saviomartin7"
+            href="https://www.instagram.com/adv.fox/"
             target="_blank"
             data-umami-event="🚀 Instagram [Link Click]"
           >
@@ -83,7 +83,7 @@ function Info() {
         <div className="flex items-start flex-wrap mt-3 leading-[180%]">
           <h4>Schedule a call? </h4>
           <a
-            href="https://cal.com/savio/chat"
+            href="https://cal.com/ajoalex/30min"
             target="_blank"
             data-umami-event="📆 Book Call [Button Click]"
           >
