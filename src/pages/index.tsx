@@ -25,7 +25,7 @@ function Index() {
         <Info />
         <Separator label="Latest Blogs" />
         <Blogs />
-        <Separator label="Products" />
+        <Separator label="Projects" />
         <Projects />
         <Footer />
       </div>

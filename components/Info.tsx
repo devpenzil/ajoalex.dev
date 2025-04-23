@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useState } from "react";
 
 function Info() {
@@ -9,17 +10,16 @@ function Info() {
     }, 1000);
   }, []);
 
-  function getCurrentTime() {
-    const now = new Date();
-    let hours = now.getHours();
-    const minutes = now.getMinutes();
-    const seconds = now.getSeconds();
-    const ampm = hours >= 12 ? "PM" : "AM";
+  function getCurrentTime(): string {
+    const now: Date = new Date();
+    let hours: number = now.getHours();
+    const minutes: number = now.getMinutes();
+    const seconds: number = now.getSeconds();
+    const ampm: string = hours >= 12 ? "PM" : "AM";
 
-    hours = hours % 12 || 12; // Convert to 12-hour format, 0 becomes 12
+    hours = hours % 12 || 12; // Convert to 12-hour format
 
-    // Pad with leading zeros if needed
-    const format = (num) => String(num).padStart(2, "0");
+    const format = (num: number): string => String(num).padStart(2, "0");
 
     return `${format(hours)}:${format(minutes)}:${format(seconds)} ${ampm}`;
   }

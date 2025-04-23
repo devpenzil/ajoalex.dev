@@ -1,7 +1,10 @@
-import React from "react";
-
 function Projects() {
-  return <div>Will be updated soon..</div>;
+  return (
+    <div>
+      Will be updated soon...
+      {/* <Accordian /> */}
+    </div>
+  );
 }
 
 export default Projects;
