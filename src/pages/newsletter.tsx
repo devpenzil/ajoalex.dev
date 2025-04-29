@@ -1,3 +1,4 @@
+import ComingSoon from "@/components/ComingSoon";
 import Navbar from "@/components/Navbar";
 import ProfileCard from "@/components/ProfileCard";
 import React from "react";
@@ -11,7 +12,9 @@ const Newsletter = () => {
         <div>
           <ProfileCard />
         </div>
-        <div className="col-span-2">2</div>
+        <div className="col-span-2">
+          <ComingSoon />
+        </div>
       </div>
     </div>
   );

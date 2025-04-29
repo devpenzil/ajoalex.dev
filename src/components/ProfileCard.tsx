@@ -17,15 +17,21 @@ const ProfileCard = () => {
           businesses grow.
         </div>
         <div className="mt-4 flex gap-2">
-          <Button variant="outline" size="icon">
-            <Twitter />
-          </Button>
-          <Button variant="outline" size="icon">
-            <Github />
-          </Button>
-          <Button variant="outline" size="icon">
-            <Instagram />
-          </Button>
+          <a href="https://x.com/devpenzil">
+            <Button variant="outline" size="icon" className="cursor-pointer">
+              <Twitter />
+            </Button>
+          </a>
+          <a href="https://github.com/devpenzil">
+            <Button variant="outline" size="icon" className="cursor-pointer">
+              <Github />
+            </Button>
+          </a>
+          <a href="http://instagram.com/adv.fox">
+            <Button variant="outline" size="icon" className="cursor-pointer">
+              <Instagram />
+            </Button>
+          </a>
         </div>
       </CardContent>
     </Card>

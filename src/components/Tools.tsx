@@ -16,16 +16,16 @@ const Tools = () => {
       icon: "/tailwind.svg",
     },
     {
-      name: "Node JS",
-      icon: "/nodejs.svg",
+      name: "Github",
+      icon: "/github.svg",
     },
     {
-      name: "Express JS",
-      icon: "/express.svg",
+      name: "Stripe",
+      icon: "/stripe.jpeg",
     },
     {
-      name: "MongoDB",
-      icon: "/mongodb.svg",
+      name: "Notion",
+      icon: "/notion.svg",
     },
   ];
 
@@ -42,7 +42,7 @@ const Tools = () => {
             >
               <img
                 src={item.icon}
-                className="h-[60px] w-[60px] object-contain"
+                className="h-[40px] w-[40px] object-contain"
                 alt=""
               />
               <div className="text-sm text-slate-300 mt-1">{item.name}</div>

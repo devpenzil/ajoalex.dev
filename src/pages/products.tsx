@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import ProductsList from "@/components/ProductsList";
 import ProfileCard from "@/components/ProfileCard";
 import React from "react";
 
@@ -11,7 +12,9 @@ const products = () => {
         <div>
           <ProfileCard />
         </div>
-        <div className="col-span-2">2</div>
+        <div className="col-span-2">
+          <ProductsList />
+        </div>
       </div>
     </div>
   );
