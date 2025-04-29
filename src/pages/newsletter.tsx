@@ -5,11 +5,11 @@ import React from "react";
 
 const Newsletter = () => {
   return (
-    <div className="lg:w-2/3 w-full md:px-4 min-h-screen mx-auto py-6">
+    <div className="lg:w-full xl:w-2/3  md:w-full px-4 mx-auto py-6 min-h-screen">
       <Navbar />
 
-      <div className="grid grid-cols-3 grid-rows-1 gap-4 mt-4">
-        <div>
+      <div className="grid md:grid-cols-3 grid-cols-1 grid-rows-1 gap-4 mt-4">
+        <div className="hidden md:block">
           <ProfileCard />
         </div>
         <div className="col-span-2">

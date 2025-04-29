@@ -15,7 +15,7 @@ const Blogs = () => {
       });
   }, []);
   return (
-    <Card className="h-[360px] text-white">
+    <Card className="h-[360px] mt-4 md:mt-0 text-white">
       <CardContent>
         <div className="text-xl font-semibold">My Latest Blogs</div>
         <a
@@ -24,11 +24,11 @@ const Blogs = () => {
         >
           Read all blogs <ArrowUpRight />
         </a>
-        <div className="grid grid-cols-3 grid-rows-1 gap-4 mt-2">
+        <div className="md:grid flex overflow-auto md:grid-cols-3 grid-rows-1 gap-4 mt-2">
           {Blogs?.map((item) => (
             <div
               key={item.title}
-              className="flex  w-full flex-col items-start justify-center rounded-lg bg-[#121114] p-2"
+              className="flex min-w-full flex-col items-start justify-center rounded-lg bg-[#121114] p-2"
             >
               <img
                 src={item?.cover_image}
