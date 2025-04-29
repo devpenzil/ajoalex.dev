@@ -25,5 +25,5 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "workbench.iconTheme": "material-icon-theme",
-  "cSpell.words": ["Accordian", "Neoito", "Peerlist", "Pressable", "Reactotron"]
+  "cSpell.words": ["Neoito", "Peerlist", "Postilo", "Pressable", "Reactotron"]
 }

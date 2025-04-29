@@ -1,36 +1,39 @@
-import React from "react";
-import Header from "../../components/Header";
-import Separator from "../../components/Separator";
-import AboutMe from "../../components/AboutMe";
-import Footer from "../../components/Footer";
-import Info from "../../components/Info";
-import Blogs from "../../components/Blogs";
-import Highlights from "../../components/Highlights";
-import Projects from "../../components/Projects";
+import Blogs from "@/components/Blogs";
+import Navbar from "@/components/Navbar";
+import Products from "@/components/Products";
+import ProfileCard from "@/components/ProfileCard";
+import Timeline from "@/components/Timeline";
+import Tools from "@/components/Tools";
 import Head from "next/head";
+import React from "react";
 
-function Index() {
+const Index = () => {
   return (
-    <div className="karla">
+    <>
       <Head>
-        <title>Ajo Alex</title>
+        <title>Ajo Alex | Entrepreneur, SaaS Founder, and Developer.</title>
       </Head>
-      <div className="container md:w-1/2 mx-auto py-20 px-4">
-        <Header />
-        <Separator label="Highlights" />
-        <Highlights />
-        <Separator label="About Me" />
-        <AboutMe />
-        <Separator label="Info" />
-        <Info />
-        <Separator label="Latest Blogs" />
+      <div className="lg:w-full xl:w-2/3  md:w-full px-4 mx-auto py-6">
+        <Navbar />
+        <div className="grid grid-cols-1 gap-4 mt-4 md:grid-cols-3 md:grid-rows-2">
+          <div className="md:row-span-2">
+            <ProfileCard />
+          </div>
+          <div>
+            <Timeline />
+          </div>
+          <div className="md:col-start-2 md:row-start-2">
+            <Tools />
+          </div>
+          <div className="md:row-span-2 md:col-start-3 md:row-start-1">
+            <Products />
+          </div>
+        </div>
+
         <Blogs />
-        <Separator label="Projects" />
-        <Projects />
-        <Footer />
       </div>
-    </div>
+    </>
   );
-}
+};
 
 export default Index;
