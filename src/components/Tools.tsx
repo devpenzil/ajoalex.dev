@@ -24,8 +24,8 @@ const Tools = () => {
       icon: "/stripe.jpeg",
     },
     {
-      name: "Notion",
-      icon: "/notion.svg",
+      name: "Arc",
+      icon: "/arc.png",
     },
   ];
 
