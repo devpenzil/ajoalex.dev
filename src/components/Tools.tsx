@@ -32,7 +32,7 @@ const Tools = () => {
   return (
     <Card className="h-[280px] text-white">
       <CardContent>
-        <div className="text-xl font-semibold">My tools</div>
+        <div className="text-xl font-semibold headerFont">My tools</div>
 
         <div className="grid grid-cols-3 grid-rows-2 gap-2 mt-2">
           {tools.map((item) => (

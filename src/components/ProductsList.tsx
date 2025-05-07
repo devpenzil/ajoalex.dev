@@ -24,8 +24,8 @@ const ProductsList = () => {
   return (
     <Card className="w-full text-white">
       <CardContent>
-        <div className="text-3xl font-semibold">
-          Check out my <span className="text-blue-500">Products</span>
+        <div className="text-3xl font-semibold headerFont">
+          Check out my <span className="text-blue-500">Launchpad</span>
         </div>
         <div className="text-base font-semibold text-slate-400 mt-3">
           This is my product portfolio. I actively build, maintain, and manage

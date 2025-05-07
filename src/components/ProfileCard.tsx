@@ -11,7 +11,9 @@ const ProfileCard = () => {
           className="h-[400px] rounded-sm object-cover"
           alt=""
         />
-        <div className="text-2xl font-semibold mt-4">I&apos;m Ajo 👋</div>
+        <div className="text-2xl font-semibold mt-4 headerFont">
+          I&apos;m Ajo 👋
+        </div>
         <div className="text-base mt-2">
           Indie Hacker | Developer. I build things for fun and profit.
         </div>

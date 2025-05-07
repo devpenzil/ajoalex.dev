@@ -20,7 +20,7 @@ const Timeline = () => {
   return (
     <Card className="h-[300px] text-white">
       <CardContent className="overflow-auto">
-        <div className="text-xl font-semibold">Timeline</div>
+        <div className="text-xl font-semibold headerFont">Timeline</div>
         <div>
           {timelines?.map((obj) => {
             return (

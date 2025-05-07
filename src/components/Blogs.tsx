@@ -17,7 +17,7 @@ const Blogs = () => {
   return (
     <Card className="h-[360px] mt-4 md:mt-0 text-white">
       <CardContent>
-        <div className="text-xl font-semibold">My Latest Blogs</div>
+        <div className="text-xl font-semibold headerFont">My Latest Blogs</div>
         <a
           href={"https://dev.to/devpenzil"}
           className="flex items-center gap-2 text-blue-500 text-xs hover:underline mt-1"

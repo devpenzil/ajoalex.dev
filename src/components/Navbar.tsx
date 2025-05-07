@@ -1,4 +1,11 @@
-import { CalendarCheck, House, Menu, Newspaper, Package } from "lucide-react";
+import {
+  CalendarCheck,
+  House,
+  Menu,
+  Package,
+  Rocket,
+  Store,
+} from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { FC } from "react";
@@ -20,7 +27,7 @@ const Navbar: FC = () => {
   console.log(route.pathname);
 
   return (
-    <Card>
+    <Card className="sticky top-0 z-50">
       <CardContent className="  hidden md:flex flex-row justify-between items-center text-white ">
         <div className="flex items-center gap-2">
           <Avatar>
@@ -41,24 +48,22 @@ const Navbar: FC = () => {
               <House /> Home
             </Button>
           </Link>
-          <Link href={"/newsletter"}>
+          <Link href={"/shop"}>
             <Button
               className="mr-2 cursor-pointer"
-              variant={
-                route?.pathname === "/newsletter" ? "secondary" : "default"
-              }
+              variant={route?.pathname === "/shop" ? "secondary" : "default"}
             >
-              <Newspaper /> Newsletter
+              <Store /> Shop
             </Button>
           </Link>
-          <Link href={"/products"}>
+          <Link href={"/launchpad"}>
             <Button
               className="cursor-pointer"
               variant={
-                route?.pathname === "/products" ? "secondary" : "default"
+                route?.pathname === "/launchpad" ? "secondary" : "default"
               }
             >
-              <Package /> Products
+              <Rocket /> Launchpad
             </Button>
           </Link>
         </div>
@@ -115,30 +120,28 @@ const Navbar: FC = () => {
                   </Link>
                 </div>
                 <div className="mt-2">
-                  <Link href={"/newsletter"}>
+                  <Link href={"/shop"}>
                     <Button
                       className="mr-2 cursor-pointer w-full"
                       variant={
-                        route?.pathname === "/newsletter"
-                          ? "secondary"
-                          : "default"
+                        route?.pathname === "/shop" ? "secondary" : "default"
                       }
                     >
-                      <Newspaper /> Newsletter
+                      <Rocket /> Shop
                     </Button>
                   </Link>
                 </div>
                 <div className="mt-2">
-                  <Link href={"/products"}>
+                  <Link href={"/launchpad"}>
                     <Button
                       className="cursor-pointer w-full"
                       variant={
-                        route?.pathname === "/products"
+                        route?.pathname === "/launchpad"
                           ? "secondary"
                           : "default"
                       }
                     >
-                      <Package /> Products
+                      <Package /> Launchpad
                     </Button>
                   </Link>
                 </div>
