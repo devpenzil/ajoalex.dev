@@ -30,7 +30,7 @@ const Tools = () => {
   ];
 
   return (
-    <Card className="h-[280px] text-white">
+    <Card className="h-[280px] ">
       <CardContent>
         <div className="text-xl font-semibold headerFont">My tools</div>
 
@@ -38,14 +38,14 @@ const Tools = () => {
           {tools.map((item) => (
             <div
               key={item.name}
-              className="flex h-[100px] w-full flex-col items-center justify-center rounded-lg bg-[#121114]"
+              className="flex h-[100px] w-full flex-col items-center justify-center rounded-lg bg-white"
             >
               <img
                 src={item.icon}
                 className="h-[40px] w-[40px] object-contain"
                 alt=""
               />
-              <div className="text-sm text-slate-300 mt-1">{item.name}</div>
+              <div className="text-sm  mt-1">{item.name}</div>
             </div>
           ))}
         </div>

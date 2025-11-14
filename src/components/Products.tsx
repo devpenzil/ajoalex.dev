@@ -3,7 +3,7 @@ import { Card, CardContent } from "./ui/card";
 
 const Products = () => {
   return (
-    <Card className="h-[600px] text-white">
+    <Card className="h-[600px] ">
       <CardContent>
         <div className="flex text-lg font-semibold justify-between items-center">
           <div className="headerFont">Latest Launches</div>

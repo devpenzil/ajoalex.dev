@@ -4,7 +4,7 @@ import { Card, CardContent } from "./ui/card";
 
 const ProfileCard = () => {
   return (
-    <Card className="h-[600px] text-white">
+    <Card className="h-[600px] ">
       <CardContent>
         <img
           src="https://avatars.githubusercontent.com/u/67946056?v=4"
@@ -15,7 +15,7 @@ const ProfileCard = () => {
           I&apos;m Ajo 👋
         </div>
         <div className="text-base mt-2">
-          Indie Hacker | Developer. I build things for fun and profit.
+          Software Engineer | I help founders to transform ideas into reality
         </div>
         <div className="mt-4 flex gap-2">
           <a href="https://x.com/devpenzil">

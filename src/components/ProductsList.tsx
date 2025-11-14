@@ -22,7 +22,7 @@ const ProductsList = () => {
     },
   ];
   return (
-    <Card className="w-full text-white">
+    <Card className="w-full">
       <CardContent>
         <div className="text-3xl font-semibold headerFont">
           Check out my <span className="text-blue-500">Launchpad</span>
@@ -35,12 +35,12 @@ const ProductsList = () => {
           return (
             <div
               key={obj.name}
-              className="h-[500px] bg-[#121114] rounded-sm mt-4 p-2"
+              className="h-[500px] bg-white rounded-sm mt-4 p-2"
             >
               <div className="relative">
                 <a
                   href={obj.link}
-                  className="absolute bottom-2 right-2 border p-4 rounded-sm bg-[#121114]/2 text-[#121114]  hover:bg-[#121114] hover:text-white transition-all duration-300"
+                  className="absolute bottom-2 right-2 border p-4 rounded-sm bg-[#121114]/2 text-[#121114]  hover:bg-white  transition-all duration-300"
                 >
                   <SquareArrowOutUpRight />
                 </a>
@@ -52,9 +52,7 @@ const ProductsList = () => {
               </div>
               <div className="flex flex-col h-[80px] items-start justify-center">
                 <div className="text-lg font-semibold">{obj.name}</div>
-                <div className="text-sm text-slate-300 mt-1">
-                  {obj.description}
-                </div>
+                <div className="text-sm  mt-1">{obj.description}</div>
               </div>
             </div>
           );

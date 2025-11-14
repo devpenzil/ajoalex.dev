@@ -28,7 +28,7 @@ const Navbar: FC = () => {
 
   return (
     <Card className="sticky top-0 z-50">
-      <CardContent className="  hidden md:flex flex-row justify-between items-center text-white ">
+      <CardContent className="  hidden md:flex flex-row justify-between items-center ">
         <div className="flex items-center gap-2">
           <Avatar>
             <AvatarImage
@@ -68,14 +68,14 @@ const Navbar: FC = () => {
           </Link>
         </div>
         <div>
-          <a href="https://cal.com/ajoalex/30min">
+          <a href="https://cal.com/ajoalex/discovery-call">
             <Button className="cursor-pointer">
               Book a Call <CalendarCheck />
             </Button>
           </a>
         </div>
       </CardContent>
-      <CardContent className="text-white flex md:hidden  flex-row justify-between">
+      <CardContent className=" flex md:hidden  flex-row justify-between">
         <div className="flex items-center gap-2">
           <Avatar>
             <AvatarImage
@@ -146,7 +146,7 @@ const Navbar: FC = () => {
                   </Link>
                 </div>
                 <div className="mt-12">
-                  <a href="https://cal.com/ajoalex/30min">
+                  <a href="https://cal.com/ajoalex/discovery-call">
                     <Button className="cursor-pointer w-full">
                       Book a Call <CalendarCheck />
                     </Button>

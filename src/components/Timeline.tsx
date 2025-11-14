@@ -18,7 +18,7 @@ const Timeline = () => {
     },
   ];
   return (
-    <Card className="h-[300px] text-white">
+    <Card className="h-[300px]">
       <CardContent className="overflow-auto">
         <div className="text-xl font-semibold headerFont">Timeline</div>
         <div>

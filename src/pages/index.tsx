@@ -11,10 +11,7 @@ const Index = () => {
   return (
     <>
       <Head>
-        <title>
-          Ajo Alex | Indie Hacker | Developer. I build things for fun and
-          profit.
-        </title>
+        <title>Ajo Alex</title>
       </Head>
       <div className="lg:w-full xl:w-2/3  md:w-full px-4 mx-auto py-6">
         <Navbar />
@@ -32,7 +29,6 @@ const Index = () => {
             <Products />
           </div>
         </div>
-
         <Blogs />
       </div>
     </>
